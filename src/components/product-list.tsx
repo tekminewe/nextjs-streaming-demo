@@ -1,9 +1,9 @@
 import { Product } from "@/app/types";
 import { ProductListItem } from "./product-list-item";
 
-export const SimilarProducts = async ({ id }: { id: number }) => {
+export const ProductList = async () => {
   const products: Product[] = await fetch(
-    `http://localhost:3000/api/products/${id}/similar`
+    `http://localhost:3000/api/products`
   ).then((res) => res.json());
 
   return (

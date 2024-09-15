@@ -6,7 +6,7 @@ export const ProductDetails = async ({ id }: { id: number }) => {
   ).then((res) => res.json());
 
   return (
-    <div>
+    <div className="border p-4">
       <p>Name: {product.name}</p>
       <p>Price: {product.price}</p>
     </div>
